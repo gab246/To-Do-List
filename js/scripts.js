@@ -11,7 +11,8 @@ if(inputValue === ''){
 } else{
     $('#list').append(li);
 }
-}
+
+
 
   //crossing out item from list
 function crossOut(){
@@ -19,8 +20,8 @@ function crossOut(){
 }
 //cross out on click
 li.on("dblclick", function crossOut(){
-li.toggleClass('strike')
-})
+li.toggleClass('strike');
+});
   //delete item button 
 let crossOutButton = $("<crossOutButton></crossOutButton>");
   crossOutButton.append(document.createTextNode('x'));
@@ -30,7 +31,7 @@ let crossOutButton = $("<crossOutButton></crossOutButton>");
 crossOutButton.on("click", deleteItem);
 function deleteItem(){
     li.addClass("delete");
-     }
+};
  //to change order of items
  list.sortable();
-
+};
