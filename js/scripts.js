@@ -29,4 +29,7 @@ let crossOutButton = $("<crossOutButton></crossOutButton>");
 crossOutButton.on("click", deleteItem);
 function deleteItem(){
     li.addClass("delete");
-     };
+     }
+ //to change order of items
+ list.sortable();
+
