@@ -12,3 +12,11 @@ if(inputValue === ''){
     $('#list').append(li);
 }
 }
+
+  //crossing out item from list
+function crossOut(){
+ li.toggleClass("strike");
+}
+
+//cross out on click
+li.on("dblclick", crossOut);
